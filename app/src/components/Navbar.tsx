@@ -1,8 +1,8 @@
-import { useState } from "react";
-
+import { useState, useEffect, useRef } from "react";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -14,16 +14,46 @@ export const Navbar = () => {
     }
   };
 
+  // Lock scrolling when the menu is opened
+  useEffect(() => {
+    const body = document.body;
+    if (showMenu) {
+      body.classList.add("overflowHidden");
+    } else {
+      body.classList.remove("overflowHidden");
+    }
+  }, [showMenu]);
+
+  // Close the menu when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header>
       <nav className="relative my-2 md:my-4 flex w-full justify-between items-center">
         <span>Ambiet</span>
 
-        <div className={`fixed top-0 right-0 ${showMenu ? 'right-0' : '-right-28'}`}>
+        <div
+          ref={menuRef}
+          className={`fixed md:relative top-0 transition-all h-full ${showMenu ? 'w-3/6 right-0 border border-l-gray-500 bg-white z-50' : '-right-96 md:right-0'
+            }`}
+        >
           {/* Desktop */}
-          <ul className=" md:flex gap-14">
+          <ul className="flex flex-col md:flex-row gap-5 md:gap-14 mx-10 my-20 md:mx-0 md:my-0">
             <li>
-              <a onClick={closeMenuOnMobile} href="#">About</a>
+              <a onClick={closeMenuOnMobile} href="#">
+                About
+              </a>
             </li>
             <li>
               <a href="#">Services</a>
@@ -35,18 +65,17 @@ export const Navbar = () => {
               <a href="#">Clients</a>
             </li>
           </ul>
-          <div className="">
+          <div className="absolute top-0 right-1 md:hidden">
             <button onClick={toggleMenu}>close</button>
           </div>
         </div>
 
-        {/*Mobile*/}
-        <button onClick={toggleMenu}>
-          <i className='bx bx-menu md:hidden text-2xl'></i>
+        {/* Mobile */}
+        <button className="flex md:hidden" onClick={toggleMenu}>
+          <i className="bx bx-menu text-2xl"></i>
         </button>
       </nav>
-
     </header>
-  )
+  );
 };
 
