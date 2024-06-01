@@ -41,7 +41,7 @@ export const Navbar = () => {
   return (
     <header>
       <nav className="relative my-2 md:my-4 flex w-full justify-between items-center">
-        <span>Ambiet</span>
+        <a className="font-bold" href="/">Ambiet</a>
 
         <div
           ref={menuRef}
@@ -51,22 +51,25 @@ export const Navbar = () => {
           {/* Desktop */}
           <ul className="flex flex-col md:flex-row gap-5 md:gap-14 mx-10 my-20 md:mx-0 md:my-0">
             <li>
-              <a onClick={closeMenuOnMobile} href="#">
+              <a className="px-4 py-2 rounded-lg bg-white hover:bg-lime-100" onClick={closeMenuOnMobile} href="#">
                 About
               </a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a className="px-4 py-2 rounded-lg bg-white hover:bg-lime-100" href="#">Services</a>
             </li>
             <li>
-              <a href="#">Technologies</a>
+              <a className="px-4 py-2 rounded-lg bg-white hover:bg-lime-100" href="#">Technologies</a>
             </li>
             <li>
-              <a href="#">Clients</a>
+              <a className="px-4 py-2 rounded-lg bg-white hover:bg-lime-100" href="#">Clients</a>
             </li>
           </ul>
-          <div className="absolute top-0 right-1 md:hidden">
-            <button onClick={toggleMenu}>close</button>
+
+          <div className="absolute top-3 right-4 md:hidden">
+            <button onClick={toggleMenu}>
+              <i className="bx bx-x text-2xl"></i>
+            </button>
           </div>
         </div>
 
