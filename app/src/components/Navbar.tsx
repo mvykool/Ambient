@@ -51,18 +51,18 @@ export const Navbar = () => {
           {/* Desktop */}
           <ul className="flex flex-col md:flex-row gap-5 md:gap-14 mx-10 my-20 md:mx-0 md:my-0">
             <li>
-              <a className="px-4 py-2 rounded-lg bg-white hover:bg-lime-100" onClick={closeMenuOnMobile} href="#">
+              <a className="px-4 py-2 rounded-lg bg-white hover:bg-primary" onClick={closeMenuOnMobile} href="#">
                 About
               </a>
             </li>
             <li>
-              <a className="px-4 py-2 rounded-lg bg-white hover:bg-lime-100" href="#">Services</a>
+              <a className="px-4 py-2 rounded-lg bg-white hover:bg-primary" href="#">Services</a>
             </li>
             <li>
-              <a className="px-4 py-2 rounded-lg bg-white hover:bg-lime-100" href="#">Technologies</a>
+              <a className="px-4 py-2 rounded-lg bg-white hover:bg-primary" href="#">Technologies</a>
             </li>
             <li>
-              <a className="px-4 py-2 rounded-lg bg-white hover:bg-lime-100" href="#">Clients</a>
+              <a className="px-4 py-2 rounded-lg bg-white hover:bg-primary" href="#">Clients</a>
             </li>
           </ul>
 
