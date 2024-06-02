@@ -4,6 +4,7 @@ import cardOne from "../assets/one.jpg"
 import cardTwo from "../assets/main-hero.jpg"
 import SmallCard from "../components/smallCard";
 import CircleIcons from "../components/circleIcons";
+import MediumCard from "../components/mediumCard";
 
 const Hero = () => {
 
@@ -35,6 +36,10 @@ const Hero = () => {
         {/* Main section image */}
         <div className="hidden md:block absolute p-3 w-3/6 -z-10 top-0 right-0">
           <img src={heroImg} alt="hero-img" className="rounded-xl h-[90vh] w-full" />
+        </div>
+
+        <div className="absolute right-10 bottom-0 mb-[6%]">
+          <MediumCard />
         </div>
       </main>
 
