@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import heroImg from "../assets/main.jpg"
-import cardOne from "../assets/hero.jpg"
+import cardOne from "../assets/one.jpg"
 import cardTwo from "../assets/main-hero.jpg"
 import SmallCard from "../components/smallCard";
+import CircleIcons from "../components/circleIcons";
 
 const Hero = () => {
 
@@ -37,11 +38,15 @@ const Hero = () => {
         </div>
       </main>
 
-      {/*Card section*/}
+      {/*bottom section*/}
 
-      <div className="flex gap-8 absolute bottom-0 mb-[5%] right-1/2">
-        <SmallCard imageUrl={cardOne} />
-        <SmallCard imageUrl={cardTwo} />
+      <div className="flex justify-between absolute items-end bottom-0 mb-[5%] w-5/12 pr-5">
+        <CircleIcons />
+
+        <div className="flex gap-8">
+          <SmallCard imageUrl={cardOne} />
+          <SmallCard imageUrl={cardTwo} />
+        </div>
       </div>
     </>
   )
