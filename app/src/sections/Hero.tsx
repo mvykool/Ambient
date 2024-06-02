@@ -38,13 +38,13 @@ const Hero = () => {
           <img src={heroImg} alt="hero-img" className="rounded-xl h-[90vh] w-full" />
         </div>
 
-        <div className="relative md:absolute right-0 md:right-10 bottom-0 my-5 md:my-[6%]">
+        <div className="relative md:absolute right-0 md:right-10 bottom-0 mb-7 mt-16 md:my-[6%]">
           <MediumCard />
         </div>
 
         {/*bottom section*/}
 
-        <div className="flex flex-col-reverse md:flex-row items-center md:items-end md:justify-between relative md:absolute bottom-0 mb-[5%] w-full md:w-5/12 md:pr-5 gap-5 md:gap-0">
+        <div className="flex flex-col-reverse md:flex-row items-center md:items-end md:justify-between relative md:absolute bottom-0 mb-[5%] w-full md:w-5/12 md:pr-5 gap-7 md:gap-0">
           <CircleIcons />
 
           <div className="flex gap-8">
