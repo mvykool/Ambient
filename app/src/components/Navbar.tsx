@@ -41,7 +41,7 @@ export const Navbar = () => {
   return (
     <header>
       <nav className="relative my-2 md:my-4 flex w-full justify-between items-center">
-        <a className="font-bold" href="/">Ambiet</a>
+        <a className="font-bold" href="/">Ambient</a>
 
         <div
           ref={menuRef}

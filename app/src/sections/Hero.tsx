@@ -20,11 +20,11 @@ const Hero = () => {
       <div className="flex flex-col justify-center w-full md:w-3/6">
         <span className=" font-light text-gray-700  md:font-semibold md:text-gray-900">Sculpting the Future with Green Materials</span>
 
-        <h1 className=" mt-5 font-bold text-4xl text-left md:text-8xl md:font-normal">Leading the Way in <span className={`${colorClass} transition-colors duration-500`}>Sustainable</span>  Materials</h1>
+        <h1 className=" mt-5 font-bold text-4xl text-left md:text-3xl lg:text-8xl md:font-normal md:flex-wrap ">Leading the Way in <span className={`${colorClass} transition-colors duration-500`}>Sustainable</span>  Materials</h1>
 
         <div className="flex justify-between md:justify-start gap-0 md:gap-5 mt-10">
-          <button className="px-4 py-2 rounded-lg border border-gray-200">Selected Projects</button>
-          <button className="px-4 py-2 rounded-lg border border-gray-200">Work with Us</button>
+          <button className="px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-200">Selected Projects</button>
+          <button className="px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-200">Work with Us</button>
         </div>
       </div>
       {/* Main section image */}
