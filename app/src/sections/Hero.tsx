@@ -29,8 +29,8 @@ const Hero = () => {
           <h1 className=" mt-5 font-bold text-4xl text-left md:text-3xl lg:text-7xl md:font-normal md:flex-wrap ">Leading the Way in <span className={`${colorClass} transition-colors duration-500`}>Sustainable</span>  Materials</h1>
 
           <div className="flex justify-between md:justify-start gap-0 md:gap-5 mt-10">
-            <button className="px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-200">Selected Projects</button>
-            <button className="px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-200">Work with Us</button>
+            <button className="px-3 md:px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-200">Selected Projects</button>
+            <button className="px-3 md:px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-200">Work with Us</button>
           </div>
         </div>
         {/* Main section image */}
@@ -38,14 +38,14 @@ const Hero = () => {
           <img src={heroImg} alt="hero-img" className="rounded-xl h-[90vh] w-full" />
         </div>
 
-        <div className="absolute right-10 bottom-0 mb-[6%]">
+        <div className="relative md:absolute right-0 md:right-10 bottom-0 my-5 md:my-[6%]">
           <MediumCard />
         </div>
       </main>
 
       {/*bottom section*/}
 
-      <div className="flex justify-between absolute items-end bottom-0 mb-[5%] w-5/12 pr-5">
+      <div className="flex flex-col-reverse md:flex-row items-center md:items-end md:justify-between relative md:absolute bottom-0 mb-[5%] w-full md:w-5/12 md:pr-5 gap-5 md:gap-0">
         <CircleIcons />
 
         <div className="flex gap-8">
