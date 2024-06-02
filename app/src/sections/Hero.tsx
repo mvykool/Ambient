@@ -21,9 +21,9 @@ const Hero = () => {
 
   return (
     <>
-      <main className="flex flex-col md:flex-row items-center mt-20 mx-auto px-8 md:px-0 md:mt-40">
+      <main className="flex flex-col md:flex-row items-center md:items-start pt-20 md:pt-36 mx-auto px-8 md:px-0 min-h-[100vh]">
         {/* Main section text */}
-        <div className="flex flex-col justify-center w-full md:w-3/6">
+        <div className="flex flex-col justify-center relative w-full md:w-3/6">
           <span className=" font-light text-gray-700  md:font-semibold md:text-gray-900">Sculpting the Future with Green Materials</span>
 
           <h1 className=" mt-5 font-bold text-4xl text-left md:text-3xl lg:text-7xl md:font-normal md:flex-wrap ">Leading the Way in <span className={`${colorClass} transition-colors duration-500`}>Sustainable</span>  Materials</h1>
@@ -41,18 +41,18 @@ const Hero = () => {
         <div className="relative md:absolute right-0 md:right-10 bottom-0 my-5 md:my-[6%]">
           <MediumCard />
         </div>
-      </main>
 
-      {/*bottom section*/}
+        {/*bottom section*/}
 
-      <div className="flex flex-col-reverse md:flex-row items-center md:items-end md:justify-between relative md:absolute bottom-0 mb-[5%] w-full md:w-5/12 md:pr-5 gap-5 md:gap-0">
-        <CircleIcons />
+        <div className="flex flex-col-reverse md:flex-row items-center md:items-end md:justify-between relative md:absolute bottom-0 mb-[5%] w-full md:w-5/12 md:pr-5 gap-5 md:gap-0">
+          <CircleIcons />
 
-        <div className="flex gap-8">
-          <SmallCard imageUrl={cardOne} />
-          <SmallCard imageUrl={cardTwo} />
+          <div className="flex gap-8">
+            <SmallCard imageUrl={cardOne} />
+            <SmallCard imageUrl={cardTwo} />
+          </div>
         </div>
-      </div>
+      </main>
     </>
   )
 }
