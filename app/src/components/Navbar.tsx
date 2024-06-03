@@ -45,7 +45,7 @@ export const Navbar = () => {
 
         <div
           ref={menuRef}
-          className={`fixed md:relative top-0 transition-all h-full ${showMenu ? 'w-3/6 right-0 border border-l-gray-500 bg-white z-50' : '-right-96 md:right-0'
+          className={`fixed md:relative  top-0 transition-all h-full ${showMenu ? 'w-3/6 right-0 border border-l-gray-500 bg-white z-50' : '-right-96 z-50 md:right-0'
             }`}
         >
           {/* Desktop */}

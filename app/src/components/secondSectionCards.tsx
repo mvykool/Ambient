@@ -15,7 +15,7 @@ const SecondSectionCards = () => {
         </div>
       </div>
       {/* Card 2 */}
-      <div className="bg-gray-100 relative flex flex-col p-5 md:p-10 items-center rounded-xl w-full h-40 md:h-96 md:w-4/6">
+      <div className="bg-gray-100 relative flex flex-col p-5 md:p-10 items-center overflow-hidden rounded-xl w-full h-40 md:h-96 md:w-4/6">
         <h3 className="text-normal mt-0 md:mt-5 md:text-2xl text-center z-10">Join us in sculpting <br /> a green and sustainable world</h3>
         <button className="mt-6 md:mt-10 rounded-2xl bg-white z-10 px-3 md:px-5 py-2 md:py-3 text-sm md:text-normal">Get Started</button>
         {/* falling pills*/}
