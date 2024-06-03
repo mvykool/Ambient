@@ -2,6 +2,7 @@ import { Navbar } from "./components/Navbar"
 import Hero from "./sections/Hero"
 import 'boxicons/css/boxicons.min.css';
 import Second from "./sections/Second";
+import Third from "./sections/third";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Hero />
         <Second />
+        <Third />
       </div>
     </>
   )
