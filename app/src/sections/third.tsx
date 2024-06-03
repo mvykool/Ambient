@@ -10,7 +10,7 @@ const Third = () => {
         </h2>
 
         {/*cards section*/}
-        <div className="w-full relative mt-[50vh]">
+        <div className="w-full absolute mt-10 flex justify-center flex-col items-center">
           {cards.map((card, i) => {
             return <CardParallax key={i} {...card} />
           })}

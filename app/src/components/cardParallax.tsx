@@ -6,8 +6,8 @@ interface Props {
 
 const CardParallax = ({ title, content, image }: Props) => {
   return (
-    <div className="h-screen flex items-center justify-center sticky top-0">
-      <div className="flex flex-col relative -top-1/4 h-[500px] w-[1000px] rounded-[25px] p-[50px] bg-red-500 origin-top">
+    <div className="h-screen flex justify-center items-center sticky top-0">
+      <div className="w-[700px] h-[300px] rounded-xl bg-red-300">
         <p>{title}</p>
         <p>{content}</p>
         <img src={image} alt="" />

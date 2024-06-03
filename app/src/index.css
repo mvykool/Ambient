@@ -7,30 +7,3 @@ html {
   overflow-x: hidden;
   margin: 0;
 }
-
-.main-container {
-  position: relative;
-  margin-top: 50vh;
-}
-
-.cardContainer {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: 0px;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: -25%;
-  height: 500px;
-  width: 1000px;
-  border-radius: 25px;
-  padding: 50px;
-  transform-origin: top;
-  background-color: red;
-}
