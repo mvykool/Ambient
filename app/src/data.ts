@@ -4,18 +4,21 @@ import three from '../src/assets/parallaxthree.jpg'
 
 export const cards = [
   {
-    title: 'Card 1',
-    content: 'This is card 1',
-    image: `${one}`
+    title: 'Eco-Friendly Development',
+    content: 'Creating innovative, sustainable, and eviromentally friendly materials for the future.',
+    image: `${one}`,
+    color: '#B5C18E'
   },
   {
-    title: 'Card 2',
-    content: 'This is card 2',
-    image: `${two}`
+    title: 'Custom Material Solutions',
+    content: 'Tailoring materials to meet the specific needs of our clients, and enviromental goals.',
+    image: `${two}`,
+    color: '#B0EBB4'
   },
   {
-    title: 'Card 3',
-    content: 'This is card 3',
-    image: `${three}`
+    title: 'Research & Development',
+    content: 'Continuously researching and developing new materials to meet the needs of the future.',
+    image: `${three}`,
+    color: '#80BCBD'
   }
 ]

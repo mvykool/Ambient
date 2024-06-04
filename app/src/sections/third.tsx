@@ -19,7 +19,7 @@ const Third = () => {
         </h2>
 
         {/*cards section*/}
-        <div className="w-full absolute mt-0 md:mt-10 flex justify-center flex-col items-center">
+        <div className="w-full absolute mt-10 md:mt-20 flex justify-center flex-col items-center">
           {cards.map((card, i) => {
             const targetScale = 1 - ((cards.length - i) * 0.05)
             return <CardParallax key={i} i={i} {...card} range={[i * 0.25, 1]} target={targetScale} progress={scrollYProgress} />
