@@ -5,6 +5,7 @@ export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const ref = useRef(null);
+  const logoRef = useRef(null);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -42,17 +43,19 @@ export const Navbar = () => {
 
   // Framer motion
   const isInView = useInView(ref, { once: true });
-
+  const isInViewLogo = useInView(logoRef, { once: true });
 
   return (
     <header>
       <nav className="relative my-2 md:my-4 flex w-full justify-between items-center">
-        <a ref={ref} style={{
-          transform: isInView ? "none" : "translateX(-100px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
-        }}
-          className="font-bold flex text-lg items-center gap-1 hover:scale-110 transform transition duration-100" href="/"><i className='bx bxs-leaf'></i>Ambient</a>
+        <a
+          ref={logoRef}
+          style={{
+            transform: isInViewLogo ? "none" : "translateX(-100px)",
+            opacity: isInViewLogo ? 1 : 0,
+            transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
+          }}
+          className="font-bold flex text-lg items-center gap-1 " href="/"><i className='bx bxs-leaf'></i>Ambient</a>
 
         <div
           ref={menuRef}
