@@ -96,8 +96,8 @@ html {
 }
 
 .button:nth-child(13) {
-  left: 85%;
-  animation-duration: 4s;
+  left: 55%;
+  animation-duration: 10s;
   animation-delay: 1s;
 }
 

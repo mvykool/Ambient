@@ -66,8 +66,7 @@ export const Navbar = () => {
                 transform: isInView ? "none" : "translateX(100px)",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
-              }}
-              className=" hover:scale-110 transform transition duration-100">
+              }}>
               <a className="px-4 py-2 rounded-lg bg-white hover:bg-primary" onClick={closeMenuOnMobile} href="#">
                 About
               </a>
@@ -77,8 +76,7 @@ export const Navbar = () => {
                 transform: isInView ? "none" : "translateX(100px)",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s"
-              }}
-              className=" hover:scale-110 transform transition duration-100">
+              }}>
               <a className="px-4 py-2 rounded-lg bg-white hover:bg-primary" href="#">Services</a>
             </li>
             <li
@@ -86,8 +84,7 @@ export const Navbar = () => {
                 transform: isInView ? "none" : "translateX(100px)",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s"
-              }}
-              className=" hover:scale-110 transform transition duration-100">
+              }}>
               <a className="px-4 py-2 rounded-lg bg-white hover:bg-primary" href="#">Technologies</a>
             </li>
             <li
@@ -95,8 +92,7 @@ export const Navbar = () => {
                 transform: isInView ? "none" : "translateX(100px)",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s"
-              }}
-              className=" hover:scale-110 transform transition duration-100">
+              }}>
               <a className="px-4 py-2 rounded-lg bg-white hover:bg-primary" href="#">Clients</a>
             </li>
           </ul>
