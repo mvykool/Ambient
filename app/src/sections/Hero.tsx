@@ -60,7 +60,13 @@ const Hero = () => {
           />
         </div>
 
-        <div className="relative md:absolute right-0 md:right-10 bottom-0 mb-7 mt-16 md:my-[8%]">
+        <div ref={ref}
+          style={{
+            transform: isInView ? "none" : "translateX(100px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s"
+          }}
+          className="relative md:absolute right-0 md:right-10 bottom-0 mb-7 mt-16 md:my-[8%]">
           <MediumCard />
         </div>
 
@@ -70,8 +76,24 @@ const Hero = () => {
           <CircleIcons />
 
           <div className="flex gap-8">
-            <SmallCard imageUrl={cardOne} />
-            <SmallCard imageUrl={cardTwo} />
+            <div ref={ref}
+              style={{
+                transform: isInView ? "none" : "translateX(-100px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+              }}
+            >
+              <SmallCard imageUrl={cardOne} />
+            </div>
+            <div
+              style={{
+                transform: isInView ? "none" : "translateX(-100px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
+              }}
+            >
+              <SmallCard imageUrl={cardTwo} />
+            </div>
           </div>
         </div>
       </main>
