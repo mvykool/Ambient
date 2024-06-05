@@ -22,7 +22,7 @@ const Hero = () => {
 
   // Framer motion
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true })
 
   return (
     <>
