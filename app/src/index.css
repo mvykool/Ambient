@@ -8,3 +8,113 @@ html {
   margin: 0;
   scroll-behavior: smooth;
 }
+
+.button {
+  animation: fall infinite ease-in;
+}
+
+@keyframes fall {
+  0% {
+    top: -20px;
+  }
+
+  100% {
+    top: 400px;
+  }
+}
+
+.button:nth-child(1) {
+  left: 20%;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.button:nth-child(2) {
+  left: 40%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.button:nth-child(3) {
+  left: 60%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.button:nth-child(4) {
+  left: 5%;
+  animation-duration: 6.5s;
+  animation-delay: 1s;
+}
+
+.button:nth-child(5) {
+  left: 20%;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+.button:nth-child(6) {
+  right: 50%;
+  animation-duration: 7.2s;
+  animation-delay: 1s;
+}
+
+.button:nth-child(7) {
+  left: 70%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.button:nth-child(8) {
+  right: 13%;
+  animation-duration: 7s;
+  animation-delay: 1.3s;
+}
+
+.button:nth-child(9) {
+  left: 17%;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+
+.button:nth-child(10) {
+  left: 40%;
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+
+.button:nth-child(11) {
+  left: 81%;
+  animation-duration: 6s;
+  animation-delay: 4s;
+}
+
+.button:nth-child(12) {
+  left: 2%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.button:nth-child(13) {
+  left: 85%;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.button:nth-child(14) {
+  left: 25%;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+
+.button:nth-child(15) {
+  right: 0%;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.button:nth-child(16) {
+  right: -10%;
+  animation-duration: 20s;
+  animation-delay: 1s;
+}

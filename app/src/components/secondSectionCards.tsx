@@ -37,12 +37,18 @@ const SecondSectionCards = () => {
         <h3 className="text-normal mt-0 md:mt-5 md:text-2xl text-center z-10">Join us in sculpting <br /> a green and sustainable world</h3>
         <button className="mt-6 md:mt-10 rounded-2xl bg-white z-10 px-3 md:px-5 py-2 md:py-3 text-sm md:text-normal hover:scale-110 transform transition hover:shadow-lg">Get Started</button>
         {/* falling pills*/}
-        <div className="px-3 py-1 text-sm bg-green-200 absolute rounded-2xl top-32 opacity-80">Ethics</div>
-        <div className="px-3 py-1 text-sm bg-green-200 absolute rounded-2xl top-40 left-28 opacity-80">Eco-friendly</div>
-        <div className="px-3 py-1 text-sm bg-green-200 absolute rounded-2xl top-5 right-52 opacity-80">Responsible</div>
-        <div className="px-3 py-1 text-sm bg-accent absolute rounded-2xl top-10 opacity-80">Progressive</div>
-        <div className="px-3 py-1 text-sm bg-accent absolute rounded-2xl top-28 right-4 opacity-80">Thoughtful</div>
-        <div className="px-3 py-1 text-sm bg-accent absolute rounded-2xl left-20 top-32 opacity-80">Sustainable</div>
+        <div className="button px-4 py-2 text-sm bg-green-200 absolute rounded-2xl top-0 opacity-50">Ethics</div>
+        <div className="button px-4 py-2 text-sm bg-green-200 absolute rounded-2xl top-0 opacity-50">Eco-friendly</div>
+        <div className="button px-4 py-2 text-sm bg-green-200 absolute rounded-2xl top-0  opacity-50">Responsible</div>
+        <div className="button px-4 py-2 text-sm bg-accent absolute rounded-2xl top-0 opacity-50">Progressive</div>
+        <div className="button px-4 py-2 text-sm bg-accent absolute rounded-2xl top-0 opacity-50">Thoughtful</div>
+        <div className="button px-4 py-2 text-sm bg-accent absolute rounded-2xl top-0 opacity-50">Sustainable</div>
+        <div className="button px-4 py-2 text-sm bg-green-200 absolute rounded-2xl top-0 opacity-50">Ethics</div>
+        <div className="button px-4 py-2 text-sm bg-green-200 absolute rounded-2xl top-0 opacity-50">Eco-friendly</div>
+        <div className="button px-4 py-2 text-sm bg-green-200 absolute rounded-2xl top-0  opacity-50">Responsible</div>
+        <div className="button px-4 py-2 text-sm bg-accent absolute rounded-2xl top-0 opacity-50">Progressive</div>
+        <div className="button px-4 py-2 text-sm bg-accent absolute rounded-2xl top-0 opacity-50">Thoughtful</div>
+        <div className="button px-4 py-2 text-sm bg-accent absolute rounded-2xl top-0 opacity-50">Sustainable</div>
       </div>
       {/* Card 3 */}
       <div
