@@ -56,7 +56,7 @@ const Hero = () => {
               opacity: isInView ? 1 : 0,
               transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
             }}
-            className="rounded-xl h-[90vh] w-full"
+            className="rounded-xl h-[90vh] object-cover w-full"
           />
         </div>
 
