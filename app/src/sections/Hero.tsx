@@ -51,7 +51,6 @@ const Hero = () => {
           <img
             src={heroImg}
             alt="hero-img"
-            loading="lazy"
             ref={ref} style={{
               transform: isInView ? "none" : "translateY(-100px)",
               opacity: isInView ? 1 : 0,
