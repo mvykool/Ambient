@@ -33,7 +33,7 @@ const CardParallax = ({ i, title, content, image, progress, target, range, color
         </div>
         <div className="relative w-[60%] md:w-[50%] h-[100%] rounded-r-xl md:rounded-xl overflow-hidden">
           <motion.div style={{ scale: scaleProgress }} className="w-[100%] h-[100%] flex justify-center items-center">
-            <img className="w-full h-full md:h-auto md:w-4/6 object-cover rounded-none md:rounded-2xl hover:scale-110 transform transition hover:shadow-lg" src={image} alt="" />
+            <img className="w-full h-full md:h-auto md:w-4/6 object-cover rounded-none md:rounded-2xl hover:scale-110 transform transition hover:shadow-lg" src={image} loading='lazy' alt="" />
           </motion.div>
         </div>
       </motion.div>

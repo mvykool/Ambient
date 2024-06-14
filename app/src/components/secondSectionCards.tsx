@@ -18,7 +18,7 @@ const SecondSectionCards = () => {
           transition: "all 0.5s"
         }}
         className="flex flex-col justify-center items-center text-white h-40 md:h-96 w-full md:w-2/6 relative hover:scale-110 transform transition hover:shadow-lg">
-        <img src={cardOne} className="absolute object-cover rounded-xl h-full w-full -z-10" alt="cardone" />
+        <img src={cardOne} loading="lazy" className="absolute object-cover rounded-xl h-full w-full -z-10" alt="cardone" />
         <p className="text-lg text-center font-semibold">Follow us for more</p>
         <div className="flex gap-2 my-4">
           <i className="bx bxl-instagram-alt text-5xl"></i>
@@ -60,7 +60,7 @@ const SecondSectionCards = () => {
           transition: "all 0.5s"
         }}
         className="flex justify-center items-center h-40 md:h-96 w-full md:w-2/6 relative hover:scale-110 transform transition hover:shadow-lg">
-        <img src={cardTwo} className="absolute object-cover rounded-xl h-full w-full -z-10" alt="cartwo" />
+        <img src={cardTwo} loading="lazy" className="absolute object-cover rounded-xl h-full w-full -z-10" alt="cartwo" />
         <i className="bx bxs-leaf text-7xl text-white"></i>
       </div>
     </div>
