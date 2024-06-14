@@ -1,5 +1,5 @@
-import cardOne from "../assets/secondsectionone.jpg"
-import cardTwo from "../assets/secondsectiontwo.jpg"
+import cardOne from "../assets/secondsectionone.webp"
+import cardTwo from "../assets/secondsectiontwo.webp"
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
 const SecondSectionCards = () => {

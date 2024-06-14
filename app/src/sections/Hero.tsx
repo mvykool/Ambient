@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react"
-import heroImg from "../assets/main.jpg"
-import cardOne from "../assets/one.jpg"
-import cardTwo from "../assets/main-hero.jpg"
+import heroImg from "../assets/main.webp"
+import cardOne from "../assets/one.webp"
+import cardTwo from "../assets/main-hero.webp"
 import SmallCard from "../components/smallCard";
 import CircleIcons from "../components/circleIcons";
 import MediumCard from "../components/mediumCard";

@@ -1,6 +1,6 @@
-import personOne from '../assets/peopl1.jpg'
-import personTwo from '../assets/peopl2.jpg'
-import personThree from '../assets/peopl3.jpg'
+import personOne from '../assets/peopl1.webp'
+import personTwo from '../assets/peopl2.webp'
+import personThree from '../assets/peopl3.webp'
 
 const Avatars = () => {
   return (
