@@ -49,6 +49,11 @@ const Hero = () => {
         {/* Main section image */}
         <div className="hidden md:block absolute p-3 w-3/6 -z-10 top-0 right-0">
           <img
+            srcSet={`${heroImg}?w=100 100w, ${heroImg}?w=200 200w, ${heroImg}?w=400 400w, ${heroImg}?w=800 800w`}
+            sizes="(max-width: 800px) 100vw, 50vw"
+            decoding="async"
+            fetchPriority="high"
+            role="presentation"
             src={heroImg}
             alt="hero-img"
             ref={ref} style={{
