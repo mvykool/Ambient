@@ -59,7 +59,7 @@ const Hero = () => {
             ref={ref} style={{
               transform: isInView ? "none" : "translateY(-100px)",
               opacity: isInView ? 1 : 0,
-              transition: "all 0.1s"
+              transition: "all 0.2s"
             }}
             className="rounded-xl h-[90vh] object-cover w-full"
           />
