@@ -1,3 +1,3 @@
 # Ambient
 
-Simple website, animation-focused, using React, Vite, and Framer-motion.
+A simple website, animation-focused, using React, Vite, and Framer-motion.
