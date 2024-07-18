@@ -48,7 +48,9 @@ const Hero = () => {
             <button className="px-3 md:px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-200 hover:scale-105 transition transform duration-100">Work with Us</button>
           </div>
         </div>
+
         {/* Main section image */}
+
         <div className="hidden md:block absolute p-3 w-3/6 -z-10 top-0 right-0">
           <img
             srcSet={`${heroImg}?w=100 100w, ${heroImg}?w=200 200w, ${heroImg}?w=400 400w, ${heroImg}?w=800 800w`}
