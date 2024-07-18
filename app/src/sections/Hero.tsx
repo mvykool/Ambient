@@ -27,7 +27,9 @@ const Hero = () => {
   return (
     <>
       <main className="flex flex-col md:flex-row items-center md:items-start pt-20 md:pt-36 mx-auto px-8 md:px-0 min-h-[100vh]">
+
         {/* Main section text */}
+
         <div
           ref={ref}
           style={{
