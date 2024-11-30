@@ -2,17 +2,21 @@
 
 pkgs.mkShell {
   buildInputs = [
-    pkgs.nodejs
-    pkgs.npm
-    pkgs.typescript
+    pkgs.nodejs      # Node.js is required for running the project
+    pkgs.typescript  # TypeScript compiler
   ];
 
   shellHook = ''
-    echo "Welcome to the TypeScript development environment!"
-    # You can add additional setup here, like installing dependencies
-    if [ ! -d "node_modules" ]; then
-      echo "Installing dependencies..."
-      npm install  # or npm install, depending on your preference
+    echo "Welcome to the Vite + React + TypeScript development environment!"
+
+    # Check if package.json exists before trying to install dependencies
+    if [ -f "package.json" ]; then
+      if [ ! -d "node_modules" ]; then
+        echo "Installing dependencies..."
+        npm install  # or yarn install, if you're using Yarn
+      fi
+    else
+      echo "Warning: No package.json found. Skipping npm install."
     fi
   '';
 }
