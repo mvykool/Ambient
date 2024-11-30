@@ -2,8 +2,8 @@
 
 pkgs.mkShell {
   buildInputs = [
-    pkgs.nodejs      # Node.js is required for running the project
-    pkgs.typescript  # TypeScript compiler
+    pkgs.nodejs
+    pkgs.typescript  
   ];
 
   shellHook = ''
